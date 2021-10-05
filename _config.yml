@@ -9,6 +9,8 @@ social:
     url: https://github.com/TheTerminalTemplar
   - name: rss
     url: feed.xml
+  - name: telegram
+    url: https://telegram.me/TheTerminalTemplar
 
 
 plugins:

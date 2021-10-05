@@ -9,7 +9,7 @@
               </a>
             </li>
             {%- else -%}
-            <a href="{{ link.url | relative_url}}">
+            <a href="{{ link.url}}">
               /{{ link.name| replace: " ", "-" | replace: "/", "" | link.name| replace: "/", "" | ERROR }}
               </a>
             </li>
