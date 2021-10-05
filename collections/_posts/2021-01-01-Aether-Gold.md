@@ -24,5 +24,3 @@ Hanging by a thread, the piercing arrow shattered the ceiling, and there fell th
 7. The gold formed into cloud, and the cloud into a crystal, of six sides unequal. 
 8. As it fell onto the Earth, it bore a great deep tunnel, that lead to everywhere and nowhere,
 to the beggining and the end, and where they both meet, a tunnel to the great unknown, a tunnel to the abyss.
-
-TTT
