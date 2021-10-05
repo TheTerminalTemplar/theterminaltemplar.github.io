@@ -1,0 +1,40 @@
+title: "TTT"
+permalink: /posts/:title/
+baseurl: ""
+markdown: kramdown
+url: "https://theterminaltemplar.github.io"
+
+social:
+  - name: github
+    url: https://github.com/TheTerminalTemplar
+  - name: rss
+    url: feed.xml
+
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo
+
+collection:
+  posts:
+    output: true
+
+highlighter: rouge
+# set the size of the text to 'large' or 'small', default is small
+font-size: small
+header_pages:
+  - pages/index.md
+  - pages/posts.md
+
+
+source              : .
+destination         : ./_site
+collections_dir     : collections
+plugins_dir         : src/_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : src/_layouts
+data_dir            : src/_data
+includes_dir        : src/_includes
+sass:
+#  sass_dir          : src/assets/css
+  style: compressed

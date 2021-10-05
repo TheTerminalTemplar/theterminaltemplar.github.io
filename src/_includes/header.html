@@ -1,0 +1,18 @@
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+
+<header style="padding-top: 10px; padding-bottom: 10px;">
+  <div class="menu">
+    <ul>
+      <!--
+    -->
+      <img style="float:left; height: 27px; width: 27px; background-color: #0000AA; transform: translateY(-25%);" src="{{ '/assets/img/lamb.png' | relative_url }}">
+      <li class="page_title" id='fancyboi'>{{ page.title }}</li>
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        <li><a href="{{ my_page.url | relative_url }}">/{{ my_page.permalink_name | replace: " ", "-" | replace: "/", "" | my_page.permalink | replace: "/", "" | ERROR }}</a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,19 @@
+---
+layout: default
+title:  "POSTS"
+---
+
+<div class="collection_list">
+{% for collection in site.collections %}
+    <!--
+    -->
+    <h2>{{collection.label | capitalize}}</h2>
+    {% for post in collection.docs %}
+    <ul>
+        <a href="{{site.url}}{{site.baseurl}}{{post.url}}">[{{post.date | slice: 0, 10}}] {{post.title}}.txt</a>  
+    </ul>
+    {% endfor %}
+{% endfor %}
+</div>
+{{ content }}
+

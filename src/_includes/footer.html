@@ -1,0 +1,21 @@
+<footer>
+  <div class="menu">
+    <ul>
+        {%- for link in site.social -%}
+          <li>
+            {%- if link.name == "rss" -%}
+            <a href="{{ link.url | relative_url}}">
+              /{{ link.name| replace: " ", "-" | replace: "/", "" | link.name| replace: "/", "" | ERROR }}
+              </a>
+            </li>
+            {%- else -%}
+            <a href="{{ link.url | relative_url}}">
+              /{{ link.name| replace: " ", "-" | replace: "/", "" | link.name| replace: "/", "" | ERROR }}
+              </a>
+            </li>
+            {%- endif -%}
+        {%- endfor -%}
+
+    </ul>
+  </div>
+</footer>
